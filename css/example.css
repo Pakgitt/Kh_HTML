@@ -78,7 +78,7 @@ section{
 }
 aside{
     /* 2. float 배치 */
-    float: left;
+    float: right;
     width: 200px;
 
     /* 테두리 */

@@ -1,3 +1,15 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
 .wrap-header {
     background-color: bisque;
 
@@ -7,13 +19,58 @@ header {
     width: 960px;
     margin: 0 auto;
     height: 160px;
+    position: relative;
 }
-
-.tnb {
-    border: 1px solid black;
-    float: right;
+/* nav > ul > li {
+    border-left: 1px solid black;
+    border-top: 1px;
+    border-bottom: 1px;
+} */
+header div.logo{
+    color: red;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    
 }
-
+.tnb >ul > li >a{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.tnb >ul >li:last-child >a{
+    border-right: 1px solid black;
+    border-radius: 0 25px 25px 0;
+}
+.tnb ul li:first-child >a{
+    border-radius: 25px 0 0 25px;
+}
+.bnb ul li >a{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.bnb >ul >li:last-child > a{
+    border-right: 1px solid black;
+    border-radius: 0 25px 25px 0;
+}
+.bnb >ul >li:first-child >a{
+    border-right: 1px solid black;
+    border-radius: 25px 0 0 25px;
+}
+.bnb {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.tnb{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+ul{
+    overflow: hidden;
+}
 ul>li {
     float: left;
 }
@@ -21,6 +78,15 @@ ul>li {
 .wrap-main {
     width: 960px;
     margin: 0 auto;
+}
+a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+a:hover{
+    color: blue;
+    background-color: black;
 }
 
 section {
@@ -30,10 +96,14 @@ section {
     margin-right: 10px;
 }
 
+article {
+    border: 1px solid black;
+}
+
 aside {
     background-color: blue;
     width: 200px;
-    float: left;
+    float: right;
 }
 
 .wrap-footer {
