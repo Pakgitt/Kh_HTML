@@ -1,0 +1,95 @@
+/* layout */
+header{ 
+    /*layout - 01 
+    전체화면에서 좌우 가운데*/
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+section {
+    /*  layout - 02
+    display:block이지만 일부 영역만 사용
+    left 정렬
+    width 지정
+    */
+    float: left;
+    width: 80%;
+    background-color: rgb(168, 102, 22);
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+article{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+aside {
+    /* layout - 02
+    display:block이지만 일부 영역만 사용
+    left 정렬
+    width 지정
+    */
+    float: right;
+    width: 20%;
+    background-color: rgb(9, 201, 201);
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+footer{
+    /* layout - 02
+    display:block이지만 일부 영역만 사용하다 다시 block 수
+    left 정렬
+    width 지정
+    */
+    clear: both;
+    background-color: tomato;
+    border: 1px solid black;
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.wrap > .wrap-nav{
+    background-color: yellow;
+    border: 1px solid black;
+}
+.wrap> .wrap-nav > nav{
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+div.wrap {
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+.wrap-content{
+    width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+
+
+/* font size */
+.fs-1 {
+    font-size: 24px;
+}
+
+.fs-2 {
+    font-size: 18px;
+}
+
+.fs-3 {
+    font-size: 16px;
+}
+
+.fs-4 {
+    font-size: 14px;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dpet</title>
+    <!-- 
+        <form method="get" action="https://...">
+            <input type="text" name="" value="">
+            <input type="submit" value="전달">
+            <input type="reset" value="초기화">
+        </form> 
+    -->
+    <style>
+
+body{
+    background-color: aqua;
+}
+h1{
+    background-color: royalblue;
+}
+a{
+    text-decoration-style: wavy;
+    text-decoration-thickness: 15;
+}
+label{
+    background-color: brown;
+    font-size: x-large;
+}
+fieldset{
+    background-color: tomato;
+}
+input{
+    background-color: antiquewhite;
+}
+.tc-red{
+    color: red;
+    font-style: italic;
+}
+.bg-blue{
+    background-color: blue;
+
+}
+    </style>
+</head>
+
+<body>
+    <a href="#n5s">눌러봐</a>
+    <h1 class="tc-red bg-blue">input type 종류</h1>
+    <form method="get" action="#">
+        <div>
+            <label for="n1next">text - 사용자 입력</label>
+            <input type="text" name="n1" id="n1next" class="input1 text">
+        </div>
+        <div>
+            <span>password</span>
+            <input type="password" name="n2" >
+        </div>
+        <div>
+            <span>hidden</span>
+            <input type="hidden" name="n3" value="value is 필수">
+        </div>
+        <div>
+            <span>button</span>
+            <input type="button" name="의미 없음" value="btn 1">name속성쓰지말어라
+            <input type="button" value="btn 2">
+            <input type="button" value="btn 3">
+        </div>
+        <div>
+            <span>checkbox - name속성 값으로 group - 반드시 value</span><br>
+            String[] n5Arr = request.getParameterValues("n5"); <br>
+            <label for="n5s">축구</label><input type="checkbox" name="n5" value="s" id="n5s">
+            <span>야구</span><input type="checkbox" name="n5" value="b">
+            <span>농구</span><input type="checkbox" name="n5" value="n">
+            <span>배구</span><input type="checkbox" name="n5" value="v">
+            <br>
+            <span>Java</span><input type="checkbox" name="n10" value="j">
+            <span>Html</span><input type="checkbox" name="n10" value="h">
+            <span>Zzzz</span><input type="checkbox" name="n10" value="z">
+        </div>
+        <div>
+            <span>file</span>
+            <input type="file" name="n6">
+        </div>
+        <div>
+            <span>radio - name속성 값으로 group - 반드시 value</span>
+            <input type="radio" name="n7" value="a" checked="checked">
+            <input type="radio" name="n7" value="b">
+            <input type="radio" name="n8" value="c">
+            <input type="radio" name="n8" value="d">
+            <input type="radio" name="n8" value="e">
+        </div>
+        <input type="submit" name="이름 없음" value="누르지마">
+        <input type="reset">
+
+    </form>
+
+    <h1>web33/dept</h1>
+    <!-- <form method="get" action="http://localhost:8080/web32/dept/insert" target="_blank">리스트 -->
+    <form method="post" action="http://localhost:8080/web33/dept/insert" target="_blank">리스트
+        <fieldset>
+            <legend>부서 추가</legend>
+            <div>
+                <span>번 호 </span>
+                <input type="text" name="deptno" placeholder="번호 넣어라">
+            </div>
+            <span>이 름 </span>
+            <input type="text" name="dname">
+            <div>
+                <span>지 역 </span>
+                <input type="text" name="loc" value="Busan">
+            </div>
+        </fieldset>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+
+    </form>
+    <form method="post" action="http://localhost:8080/web33/dept/delete" target="_blank">리스트
+        <div>
+            번 호 <input type="text" name="deptno">
+        </div>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+
+
+    </form>
+</body>
+
+</html>
