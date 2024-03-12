@@ -1,0 +1,47 @@
+.wrap-header {
+    background-color: bisque;
+
+}
+
+header {
+    width: 960px;
+    margin: 0 auto;
+    height: 160px;
+}
+
+.tnb {
+    border: 1px solid black;
+    float: right;
+}
+
+ul>li {
+    float: left;
+}
+
+.wrap-main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: brown;
+    width: 705px;
+    float: left;
+    margin-right: 10px;
+}
+
+aside {
+    background-color: blue;
+    width: 200px;
+    float: left;
+}
+
+.wrap-footer {
+    background-color: bisque;
+    clear: both;
+}
+
+footer {
+    width: 960px;
+    margin: 0 auto;
+}
