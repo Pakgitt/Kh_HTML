@@ -1,0 +1,32 @@
+.wrap-header
+, .wrap-footer{
+    background-color: green;
+}
+.wrap-header > header
+, .wrap-footer > footer
+{
+    /* 중앙 배치 */
+    width: 960px; margin: 0 auto;
+}
+
+.wrap-main{
+    overflow: hidden;
+    background-color: yellow;
+    width: 960px; margin: 0 auto;
+    /* margin: 10px 0; */
+
+    padding: 10px 0;
+}
+.wrap-main>section{
+    width: 750px; float: left;
+}
+.wrap-main>aside{
+    width: 200px; float: left;
+}
+.wrap-main section{
+    margin-right: 10px;
+}
+.wrap-footer{
+    /* float 배치 */
+    clear: both;
+}

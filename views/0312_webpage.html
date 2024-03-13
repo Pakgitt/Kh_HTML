@@ -83,11 +83,12 @@
 
         </section>
         <aside>
-            <input type="radio" name="first">
-            <input type="radio" name="second">
-            <label>First</label>
-            <label>Second</label>
+            <!-- name 그룹핑 시킬때 사용 (필수) -->
 
+            <input type="radio" name="n1" id="first" checked="checked">
+            <input type="radio" name="n1" id="second">
+            <label for="first">First</label>
+            <label for="second">Second</label>
             <div class="tab-item">
                 <ul>
                     <li>
@@ -126,8 +127,10 @@
                     </li>
                 </ul>
             </div>
+            <div class="tab-item"> 다른 페이지 . . . .</div>
         </aside>
     </div>
+
     <div class="wrap-footer">
         <footer>
             <div>
