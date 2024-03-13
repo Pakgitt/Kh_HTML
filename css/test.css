@@ -33,29 +33,37 @@ header div.logo{
     top: 50px;
     
 }
-.tnb >ul > li >a{
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+ul{
+    overflow: hidden;
 }
-.tnb >ul >li:last-child >a{
+ul>li {
+    float: left;
+    
+}
+.tnb >ul > li{
+    border: solid black;
+    border-width: 1px 0 1px 1px;
+    /* border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; */
+}
+.tnb >ul >li:last-child{
     border-right: 1px solid black;
     border-radius: 0 25px 25px 0;
 }
-.tnb ul li:first-child >a{
+.tnb ul li:first-child{
     border-radius: 25px 0 0 25px;
 }
-.bnb ul li >a{
+.bnb ul li {
     border-left: 1px solid black;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
-.bnb >ul >li:last-child > a{
+.bnb >ul >li:last-child{
     border-right: 1px solid black;
     border-radius: 0 25px 25px 0;
 }
-.bnb >ul >li:first-child >a{
-    border-right: 1px solid black;
+.bnb >ul >li:first-child{
     border-radius: 25px 0 0 25px;
 }
 .bnb {
@@ -68,22 +76,30 @@ header div.logo{
     top: 0;
     right: 0;
 }
-ul{
-    overflow: hidden;
-}
-ul>li {
-    float: left;
-}
 
 .wrap-main {
     width: 960px;
     margin: 0 auto;
 }
 a{
+    display: inline-block;
     color: black;
     text-decoration: none;
     padding: 10px;
 }
+nav.tnb>ul>li:first-child >a{
+    border-radius: 25px 0 0 25px;
+}
+nav.tnb>ul>li:last-child >a{
+    border-radius: 0 25px 25px 0;
+}
+nav.bnb>ul>li:first-child >a{
+    border-radius: 25px 0 0 25px;
+}
+nav.bnb>ul>li:last-child >a{
+    border-radius: 0 25px 25px 0;
+}
+
 a:hover{
     color: blue;
     background-color: black;
@@ -107,6 +123,7 @@ aside {
 }
 
 .wrap-footer {
+    
     background-color: bisque;
     clear: both;
 }
