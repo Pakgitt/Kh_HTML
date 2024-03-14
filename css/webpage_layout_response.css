@@ -1,0 +1,46 @@
+.wrap{
+    overflow: scroll;
+    padding-right: 20px;
+}
+.wrap-header,
+.wrap-footer {
+    background-color: green;
+}
+
+.wrap-header>header,
+.wrap-footer>footer {
+    /* 중앙 배치 */
+    /* width: 100vw; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrap-main {
+    overflow: hidden;
+    background-color: yellow;
+    width: calc(100vw - 14px);
+    margin: 0 auto;
+    padding: 10px 0;
+    /* margin: 10px 0; */
+}
+
+.wrap-main>section {
+    width: calc(100vw - 200px);
+    margin-right: 10px;
+    /* float: left; */
+}
+
+.wrap-main>aside {
+    width: 200px; float: left;
+    
+    /* float: left; */
+}
+
+.wrap-main section {
+    margin-right: 10px;
+}
+
+.wrap-footer {
+    /* float 배치 */
+    /* clear: both; */
+}
