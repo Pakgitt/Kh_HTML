@@ -15,9 +15,10 @@
     <!-- 4. font-faminly, 폰트크기 5~7개 정도 class 미리 만들어두기 -->
     <!-- 4. button 3개 class 미리 만들어두기 -->
     <!-- 4. a 모양 미리 만들어두기 -->
-    <link rel="stylesheet" href="/css/webpage_core.css">
+    <link rel="stylesheet" media="screen" href="/css/webpage_core.css">
     <!-- body Layout 영역 -->
     <link rel="stylesheet" href="/css/webpage_layout.css">
+    <!-- <link rel="stylesheet" href="/css/webpage_layout_min.css"> -->
     <!-- header 영역 stlye -->
     <link rel="stylesheet" href="/css/webpage_header.css">
     <!-- section 영역 stlye -->
@@ -27,6 +28,143 @@
     <!-- footer 영역 stlye -->
     <link rel="stylesheet" href="/css/webpage_footer.css">
 </head>
+<style>
+    @media screen and (min-width:960px) {
+        body {
+            font-size: 1.5em;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 1.38em;
+            line-height: 1.3em;
+            background-color: black;
+        }
+
+        h3 {
+            font-weight: 900;
+            font-size: 1.1em;
+            line-height: 1.1em;
+        }
+
+        header .tnb a {
+            padding: 10px 15px;
+        }
+
+        header .bnb a {
+            padding: 15px 20px;
+        }
+    }
+
+    @import url("/css/webpage_layout.css") screen and (min-width:801px);
+    @import url("/css/webpage_layout_min.css") screen and (min-width:800px);
+    @media screen and (min-width:801px) {
+
+        .wrap-header,
+        .wrap-footer {
+            background-color: green;
+        }
+
+        .wrap-header>header,
+        .wrap-footer>footer {
+            /* 중앙 배치 */
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .wrap-main {
+            overflow: hidden;
+            background-color: yellow;
+            width: 960px;
+            margin: 0 auto;
+            /* margin: 10px 0; */
+
+            padding: 10px 0;
+        }
+
+        .wrap-main>section {
+            width: 750px;
+            float: left;
+        }
+
+        .wrap-main>aside {
+            width: 200px;
+            float: left;
+        }
+
+        .wrap-main section {
+            margin-right: 10px;
+        }
+
+        .wrap-footer {
+            /* float 배치 */
+            clear: both;
+        }
+
+    }
+
+    @media screen and (max-width:800px) {
+
+        body {
+            font-size: .5em;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 1.38em;
+            line-height: 1.3em;
+            background-color: black;
+        }
+
+        h3 {
+            font-weight: 900;
+            font-size: 1.em;
+            line-height: 1.1em;
+        }
+
+        .wrap-header,
+        .wrap-footer {
+            background-color: green;
+        }
+
+        .wrap-header>header,
+        .wrap-footer>footer {
+            /* 중앙 배치 */
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .wrap-main {
+            overflow: hidden;
+            background-color: yellow;
+            width: 600px;
+            /* margin: 0 auto; */
+            /* margin: 10px 0; */
+
+            padding: 10px 0;
+        }
+
+        .wrap-main>section {
+            width: 600px;
+            /* float: left; */
+        }
+
+        .wrap-main>aside {
+            width: 400px;
+            margin: 0 auto;
+            /* float: left; */
+        }
+
+        .wrap-main section {
+            margin-right: 10px;
+        }
+
+        .wrap-footer {
+            /* float 배치 */
+            /* clear: both; */
+        }
+    }
+</style>
 
 <body>
     <div class="wrap-header">
@@ -84,22 +222,26 @@
                 <div class="flex-3 inputform">
                     <div>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error
-                        ipsum blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit
+                        ipsum blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus
+                        sit
                         dignissimos neque exercitationem?
                     </div>
                     <div>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error
-                        ipsum blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit
+                        ipsum blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus
+                        sit
                         dignissimos neque exercitationem?
                     </div>
                     <div>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error
-                        ipsum blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit
+                        ipsum blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus
+                        sit
                         dignissimos neque exercitationem?
                     </div>
                     <div>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error
-                        ipsum blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit
+                        ipsum blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus
+                        sit
                         dignissimos neque exercitationem?
                     </div>
                 </div>
@@ -127,7 +269,8 @@
                 <div class="grid-3">
                     <div>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error
-                        ipsum blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit
+                        ipsum blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus
+                        sit
                         dignissimos neque exercitationem?
                     </div>
                     <div>
@@ -135,17 +278,19 @@
                     </div>
                     <div>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error
-                        ipsum blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit
+                        ipsum blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus
+                        sit
                         dignissimos neque exercitationem?
                     </div>
                     <div>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, aliquid dolores ipsa error
-                        ipsum blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus sit
+                        ipsum blanditiis at, totam ex quas, obcaecati ratione repellat laboriosam! Nemo necessitatibus
+                        sit
                         dignissimos neque exercitationem?
                     </div>
                 </div>
             </article>
-        
+
         </section>
         <aside>
             <input type="radio" name="n1" id="first" checked="checked">
