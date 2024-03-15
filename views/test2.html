@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 906px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>4의 배수 아닐까</h1>
+    <script>
+        var pr = prompt("숫자를 입력하세요");
+        if (pr % 4 == 0) {
+            console.log("4의 배수입니다")
+        } else { console.log("4의 배수가 아닙니다") }
+    </script> -->
+    <h1>3의 배수 찾기</h1>
+    <script>
+        var pr = prompt("몇까지 3의 배수를 찾을까여");
+        pr = Number.parseInt(pr);
+        var leg = pr / 3;
+        var arr = [];
+        for (var i = 1; i <= leg; i++) {
+            arr[i-1] = i * 3;
+            console.log(arr[i-1] + '');
+        }
+        console.log(arr.length);
+    </script>
+</body>
+
+</html>

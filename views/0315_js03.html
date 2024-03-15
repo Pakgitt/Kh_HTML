@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <h1 id="id1">연산자</h1>
+    <h1 class="c2">연산자</h1>
+    <script>
+        var a1 = 10;
+        var a2 = "10";
+        console.log((a1 == a2) ? "같다" : "다르다");
+        console.log((a1 === a2) ? "같다" : "다르다");   // 자료형도 체크
+
+        var arr = ["apple", "banananananana", function () { console.log("배열 2번의 index의 함수 입니다") }];
+        for (var i = 0; i < arr.length; i++) {
+            if (typeof (arr[i]) == "function") {
+                arr[i]();
+            } else {
+                console.log(arr[i])
+            }
+        }
+
+        arr[10] = "10번방에 값 넣기"
+        // console.log(arr[10]);
+        // 배열이라면 인덱스 
+        for (var i in arr) {
+            console.log(arr[i]);
+        }
+        for (var i = 0; i < arr.length + 3; i++) {
+            console.log(arr[i]);
+        }
+
+        var arr = new Array(2); // 2개방 즉 index 0,1
+        arr[0] = 100;
+        arr.push(103);    // 맨뒤에 추가 // index 2
+        arr.push("apple")
+        arr.push("2번방에도 값 들어가나");
+        arr[1] = "2번방";
+        arr[10] = "10번방 [] 으로도 들어가나?";
+        for (var i in arr) {
+            console.log(i + ":" + arr[i]);
+        }
+
+        // var obj = {
+        //     k1: "Seoul",
+        //     k2: "Daejeon",
+        //     k3: 32
+        // };
+        // console.log(typeof obj);
+        // // 오브젝트라면 키 명
+        // for (var key in obj) {
+        //     // console.log(key);
+        //     // console.log(obj);
+        //     console.log(obj[key]);
+        // }
+
+    </script>
+</body>
+
+</html>

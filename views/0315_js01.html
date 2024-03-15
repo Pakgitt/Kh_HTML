@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        // debuging 용도
+        document.write("안냥");
+        document.write("하십니까");
+        // 화면 공백에서 뿌려짐, 화면이 보여지는 상태에서 뿌려지려면 ajax(비동기방식)
+        // window.alert("경고문"); 
+    </script>
+    <style>
+        body {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="h1id">JavaScript</h1>
+    <h1 class="h1class">JavaScript</h1>
+    <h1 class="h1class">JavaScript</h1>
+    <script>
+        // object 집중적
+        var a15 = { k1: 1, k2: "s" };
+        console.log(a15);
+        a15.k3 = "a15에 새로운 key k3 생성 후 값";
+        console.log(a15);
+        a15.k2 = "a15에 기존 key k2의 값 변경"
+
+        a16 = "a16은 앞에 window. 생략. 즉 window에 기존 key a16이 없다면 생성, 있다면 값 변경"
+        console.log(typeof (a16));
+    </script>
+    <script>
+        // window.alert("window객체의 alert 라는 함수/메소드 호출")
+        // alert("window객체의 키들은 window 생략 가능")
+        window.document.getElementsByClassName("..");
+        var a8 = //true //232.32 //"sdf" //null
+            console.log(typeof (window.a8));
+
+        var a9 = {
+            k1: 123, name: '홍길동', gender: 'Male'
+            , score: { KOR: 100, ENG: 90, MATH: 70 }
+            , a14: function () {
+                console.log("function 형태 a14의 값");
+                console.log("키명 = 변수명 a14가 function명이 됨");
+                console.log(2 * 4 + 10);
+                return a9
+            }
+        };
+        // console.log(typeof a9);
+        // console.log(a9);
+        console.log(a9.a14);    // a14의 값 = 코드 자체
+        console.log(a9.a14());  // a14 실행 후 나타냄 
+        console.log(a9.score.MATH)
+        // function
+        // 함수 정의
+        var a10 = function () {
+            console.log("function 형태 변수 선언");
+            console.log("변수명 = function명");
+            console.log(2 * 4 + 10);
+            return a9
+        };
+        console.log(typeof a10);
+        console.log(a10);
+        // 함수 실행
+        a10();
+        console.log(a10());
+
+        function a12() {
+            console.log("function 정의함");
+            console.log("자바와 동일한 위치에 함수명이 있다");
+            console.log(2 * 4 + 10);
+            return 2 * 10;
+        };
+        // var a3 = document.getElementById("h1id");
+        // console.log(a3);
+        // var a4 = document.getElementsByClassName("h1class");
+        // console.log(a4);
+        // var a5 = document.getElementsByTagName("h1");
+        // console.log(a5);
+        // var a6 = document.querySelector(".h1class");
+        // console.log(a6);
+        // var a7 = document.querySelectorAll(".h1class");
+        // console.log(a7);
+        // console.log(a7[0]);
+    </script>
+    <script>
+        document.write("안냥2");
+        document.write("하십니까2");
+        // 화면 공백에서 뿌려짐, 화면이 보여지는 상태에서 뿌려지려면 ajax(비동기방식)
+        // window.alert("경고문2"); 
+        document.getElementsByTagName("h1")[1].innerHTML = "<a href='#'><em>자바스크립투투투</em></a>";
+        document.getElementsByTagName("h1")[2].innerText = "자바스크립투";
+        document.getElementById("h1id").innerHTML = "얌마";
+    </script>
+    <script>
+
+        // var a1 = window.prompt("몇살이니");
+        // document.getElementsByTagName("h1")[0].innerHTML= a1;
+        // console.log(a1);
+        // document.write(a1);
+
+        // var a2 = window.confirm("계속 진행하시겠습니까?");
+        // console.log(a2);
+        // document.write(a2);
+    </script>
+</body>
+
+</html>
