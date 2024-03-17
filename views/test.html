@@ -1,43 +1,162 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0315</title>
+    <title>Document</title>
     <style>
-        body {
-            text-align: center;
-        }
-
-        #heading {
+        h1 {
             color: blue;
         }
 
-        #text {
-            color: gray;
-            font-size: 15px;
+        div {
+            display: inline-block;
+            padding: 0 20px 30px 20px;
+            margin: 15px;
+            border: 1px solid black;
+            line-height: 2;
+        }
+
+        div h3 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        table,
+        td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 5px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 
 <body>
     <h1 id="heading">자바스크립트</h1>
-    <p id="text">위 텍스트를 클릭해 보세요</p>
+    <p id="id">위 텍스트를 클릭해 보세요</p>
 
     <script>
-
-        var heading = document.querySelector('#heading');
+        /* alert("안녕하세요")
+        var heading = document.querySelector("#heading");
         heading.onclick = function () {
             heading.style.color = "red";
         }
-        var name = prompt("너 몇살이야 임마");
-        document.write("<h1>나<em> " + name + "</em>살 이다</h1>")
+        var name = prompt("이름을 입력하세요");
+        console.log(name);
+        var currentYear = 2024;
+        var birthYear;
+        var age;
+
+        birthYear = prompt("태어난 년도를 입력하세요");
+        age = currentYear - birthYear + 1;
+        document.write(currentYear + "년 현재<br>");
+        document.write(birthYear + "년에 태어난 사람의 나이는" + age + "살입니다"); */
+    </script>
+    <h1>구구단</h1>
+    <script>
+        /* var i, j;
+
+        for(i=1;i<=9;i++){
+            document.write("<div>");
+            document.write("<h3>"+i+"단</h3>");
+            for(j=1;j<=9;j++){
+                document.write(i + "X" + j + "=" +i*j);
+            }
+            document.write("</div>")
+        } */
+    </script>
+
+    <h1>while문으로 팩토리얼 계산</h1>
+    <script>
+        /* var n = prompt("숫자를 입력하세요 : ")
+        var msg = " ";
+
+        if (n !== null) {
+            var nFact = 1;
+            var i = 1;
+
+            while (i <= n) {
+                nFact *= i;
+                i++;
+            }
+            msg = n + "! = " + nFact;
+        } else {
+            msg = "값을 입력하지 않았습니다"
+        }
+        document.write(msg); */
+    </script>
+
+    <h1>좌석 만들기</h1>
+    <script>
+        // var memNum = prompt("입장객은 몇 명인가요?");  // 전체 입장객
+        // var colNum = prompt("한 줄에 몇 명씩 앉습니까?");  // 한 줄에 앉을 사람
+
+        // if (memNum % colNum == 0)
+        //     rowNum = parseInt(memNum / colNum);
+        // else
+        //     rowNum = parseInt(memNum / colNum) + 1;
+        // var i, j;
+
+        // document.write("<table>");
+        // for (i = 0; i < rowNum; i++) {
+        //     document.write("<tr>")
+        //     for (j = 1; j <= colNum; j++) {
+        //         seatNo = i * colNum + j;
+        //         if (seatNo > memNum) break;
+        //         document.write("<td>좌석" + seatNo + "</td>");
+        //     }
+        //     document.write("<tr>")
+        // }
+        // document.write("</table>")
+    </script>
+    <h1>4의 배수가 아닐까</h1>
+    <script>
+        // var num = prompt("숫자를 입력하세요.");
+
+        // if (num % 4 === 0) {
+        //     document.write(num + "은 4의 배수입니다.")
+        // } else {
+        //     document.write("4의 배수가 아닙니다")
+        // }
+    </script>
+    <h1>3의 배수 찾기</h1>
+    <script>
+        // var num = prompt("숫자를 입력하세요.")
+        // num = Number.parseInt(num);
+        // leng = num / 3;
+
+        // var arr = [];
+        // for (i = 1; i < leng; i++) {
+        //     arr[i] = i * 3;
+        //     document.write(arr[i] + ", ");
+        // }
+        // document.write("<br>"+num + "까지의 배수의 개수 : " + (arr.length - 1));
     </script>
     <script>
-        var n1 = prompt("1수 입력");
-        var n2 = prompt("2수 입력");
+        // function addNumber() {
+        //     var sum = 10 + 20;
+        //     multi = 10 * 20;
+        //     // document.write(sum);
+        //     // document.write(multi);
+        // }
+        // addNumber();
+        // console.log(multi);
+        // console.log(sum) ;
+    </script>
+    <script>
+        var x = 10;
 
+        function displayNumber() {
+            console.log("x is " + x);
+            console.log("y is " + y);
+            var y = 20;
+        }
+        displayNumber();
     </script>
 </body>
 
