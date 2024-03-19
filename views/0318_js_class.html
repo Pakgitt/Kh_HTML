@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js class</title>
+</head>
+
+<body>
+    <h1>class constructor</h1>
+
+    <script>
+        console.log("class constructor 전단계");
+        function functionCon(age, name, score) {
+            var obj = {
+                age: age,
+                name: name,
+                score: score
+            };
+            return obj;
+        }
+
+        let ej = functionCon(12, 'Park', 25);
+        let jw = functionCon(34, 'won', 18);
+        console.log(ej.score);
+        ej.score = 99.999;
+        console.log(ej.score);
+
+        function Student(age, name, score) {
+            this.age = age;
+            this.name = name;
+            this.score = score;
+        }
+        let sh = new Student(23,'fd', 656);
+        console.log(sh);
+
+    </script>
+</body>
+
+</html>

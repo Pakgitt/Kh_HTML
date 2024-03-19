@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+
+<body>
+    <script>
+        function f1 (b1){
+            if(typeof b1=="click"){
+                
+            }
+        }
+        // function f1(a1, a2, a3) {
+        //     console.log("f1함수 실행");
+        //     console.log(arguments);
+
+        //     if (typeof (a3) == "undefined") {
+        //         console.log("a3 기본 설정 해줄게");
+        //     } else {
+        //         console.log(a3);
+        //     }
+        // }
+        // // 함수 실행
+        // f1();
+        // f1(10);
+        // f1("abv");
+        // f1(10, 20, 30);
+        // f1(10, 20, function () {
+        //     console.log("네네네네")
+        // });
+        // // 정신 못 차릴래 f1(10,20,"abc",30);
+
+
+        var a1 = { k1: 'v1', k2: 'v2', k3: 'v3' };
+        var a2 = { "k 3": "이름 띄워 쓰기"};
+        a1.k4 = "v4"
+        console.log(a1.k1);
+        console.log(a1["k2"]);
+        console.log(a1);
+        delete(a1.k1);
+        delete(a1.k4);
+        // a1.push({k5:"v5"});            
+        console.log(a1);
+        
+    </script>
+</body>
+
+</html>
