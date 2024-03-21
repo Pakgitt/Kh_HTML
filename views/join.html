@@ -81,6 +81,28 @@
             </tr>
         </table>
     </div>
+    <div class="form-cont">
+        <div class="valid-check fail">
+            <div class="awsomplete">
+                <input type="text" name="" id="formJoin01" class="from-ip" placeholder="아이디를 입력해주세요">
+                <span class="valid-desc">아이디를 입력해 주세요</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("#formJoin01").on("blur", function(){
+            var strLength = $(this).val().trim().length;
+            var mdg = '';
+            if(strLength < 1){
+                mdg = '아이디를 입력해라';
+            
+            }
+            $(".valid-desc").html(msg);
+            
+        });
+    
+    
+    </script>
 </body>
 
 </html>
