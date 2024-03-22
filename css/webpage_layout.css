@@ -21,10 +21,15 @@
     width: 750px; float: left;
 }
 .wrap-main>aside{
-    width: 200px; float: left;
+    position: fixed;
+    width: 200px;
+    top: 300px;
+    right: 10px;
 }
 .wrap-main section{
     margin-right: 10px;
+    width: 750px;
+
 }
 .wrap-footer{
     /* float 배치 */

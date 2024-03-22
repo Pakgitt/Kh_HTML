@@ -1,9 +1,9 @@
-header{
-    height: 150px;
-}
 .header-wrap{
     background-color: green;
 
+}
+header{
+    height: 150px;
 }
 .header-wrap header{
     width: 100%;

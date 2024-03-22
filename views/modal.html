@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모달</title>
+    <script src="https:/code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<style>
+    body {
+        background-color: red;
+    }
+
+    /* 모달 */
+    button,
+    h1 {
+        position: absolute;
+        top: 200px;
+        left: 800px;
+    }
+
+    /* .section .wrap-modal {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(130, 130, 130, .5);
+
+    } */
+
+    .section .wrap-modal>.modal-content {
+        width: 500px;
+        margin: 0 auto;
+        position: relative;
+        top: 50px;
+        left: 100px;
+        background-color: olive;
+    }
+    .section .btn.modal{
+        float: left;
+    }
+    .section .btn.modal-close{
+        float: left;
+    }
+</style>
+
+<body>
+    <div class="wrap-main">
+        <section class="section">
+            <article>
+                <input type="text" name="" id="">
+                <input type="text" name="" id="">
+                <input type="text" name="" id="">
+                <input type="text" name="" id="">
+                <div>
+                    <h1>모달</h1>
+                    <button type="button" class="btn modal"><img src="/img/zzang.jpg" alt="">
+                    <span>모달</span>
+                    <span>띄우기</span>
+                </button>
+    
+                    <div class="wrap-modal modal project write"> <!-- 모달의 뒷배경을 담당 -->
+                        <div class="modal-content modal project write">
+                            <div class="btn nodal-close">X</div>
+                            <div>
+                                Lorem!
+                            </div>
+                            <div>
+                                Lorem!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script>
+        $(loadedHandler);
+        function loadedHandler() {
+            $(".btn.modal").on("click", btnModalClickHandler);
+            $(".btn.modal-close").on("click", btnModalCloseHandler);
+            $(".wrap-modal").on("click", btnModalCloseHandler);
+        }
+
+        function btnModalClickHandler(e) {
+            console.log(e);
+            console.log(this)
+            $(".section .wrap-modal").css("display", "block");
+            
+        }
+        function btnModalCloseHandler(a1) {
+            console.log(a1);
+            $(".section .wrap-modal").css("display", "none");
+        }
+    </script>
+</body>
+
+</html>
