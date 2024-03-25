@@ -23,7 +23,7 @@
         };
 
         function minusHandler() {
-            if($("input.num").val() > 0){
+            if($("input.num").val() > 1){
                 $("input.num").val(Number.parseInt($("input.num").val()) - Number.parseInt(1));
                 // console.log($("price"));
                 $("div.total").html(Number.parseInt(16000) * Number.parseInt($("input.num").val())  + '원');
