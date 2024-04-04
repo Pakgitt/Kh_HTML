@@ -19,6 +19,7 @@
         // 각종 기능 함수들
         function cntBlurHandler(e){
             // 메뉴마다 합계가격
+            colsole.log(this);
             $(this).parent().next().children('input.p').val(
                 $(this).parent().prev().text() * $(this).val()  );
             updateTotal();
