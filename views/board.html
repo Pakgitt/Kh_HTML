@@ -14,20 +14,28 @@
 </style>
 
 <body>
-	<h1>게시판</h1>
-	<table>
-		<tr>
-			<th>번호</th>
-			<th>제목</th>
-			<th>작성자</th>
-			<th>작성일</th>
-			<th>조회수</th>
-		</tr>
-		<tbody class="table-body">
+	<div class="board container">
+		<div class="aside">
+			
+		</div>
+		<h1>게시판</h1>
+		<table>
+			<tr>
+				<th>번호</th>
+				<th>제목</th>
+				<th>작성자</th>
+				<th>작성일</th>
+				<th>조회수</th>
+			</tr>
+			<tbody class="table-body">
 
-		</tbody>
-	</table>
-	<button type="button" class="btn write">글작성</button>
+			</tbody>
+		</table>
+		<button type="button" class="btn write">글작성</button>
+	</div>
+
+
+
 	<script>
 		$(loadedHandler);
 		function loadedHandler() {
@@ -35,12 +43,12 @@
 		}
 		function btnWriteHandler() {
 			var htmlVal = '<tr>' +
-							'<td>번호</td>' +
-							'<td>제목</td>' +
-							'<td>작성자</td>' +
-							'<td>작성일</td>' +
-							'<td>조회수</td>' +
-						'<tr>';
+				'<td>번호</td>' +
+				'<td>제목</td>' +
+				'<td>작성자</td>' +
+				'<td>작성일</td>' +
+				'<td>조회수</td>' +
+				'<tr>';
 			$(".table-body").append(htmlVal);
 		}
 	</script>
