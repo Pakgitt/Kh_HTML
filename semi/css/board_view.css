@@ -1,48 +1,4 @@
-*{
-    box-sizing: border-box ;
-}
-a{
-    text-decoration: none;
-}
 
-header{
-
-}
-.wrap-main{
-    width: 100%;
-    min-width: 1100px;
-    min-height: 100%;
-}
-.container{
-    width: 1200px;
-    margin: 0 auto;
-}
-.flexnav{
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-
-}
-.flex{
-    width: 100%;
-    text-align: center;
-    border: 1px solid black;
-    height: 60px;
-    padding-top: 20px;
-}
-.location{
-    float: right;
-    height: 30px;
-    margin-top: 10px;
-    padding-top: 5px;
-    
-}
-.subject{
-    margin-top: 80px;
-    text-align: center;
-    font-size: 2.0rem;
-    font-weight: bold;
-}
 .contents{
     min-height: 300px;
     margin-top: 25px 10px 0 10px;
@@ -67,8 +23,10 @@ header{
 }
 
 .board-view .view-header .info{
+    font-size: 2.2rem;
+    border-bottom: 2px solid #403e70;
     width: 100%;
-    display: inline-block;
+    /* display: inline-block; */
 }
 .board-view .view-header .info dl{
     display: inline-block;
@@ -79,7 +37,11 @@ header{
     float: left;
     width: 80px;
     font-size: 15px;
+    /* display: table-cell; */
+    position: relative;
+    vertical-align: middle;
 }
+
 .board-view .view-header .info dl dt::after{
 content: "|";
 color: #221f1f;
@@ -88,12 +50,44 @@ top: 50%;
 right: 0;
 margin-top: -11px;
 }
+
 .board-view .view-header .info dl dd{
     font-size: 16px;
-    padding-left: 30px;
+    padding-left: 120px;
     color: #221f1f;
     font-weight: bold;
 }
+.board-view .view-header .file{
+    display: inline-block;
+    width: 100%;
+}
+.board-view .view-header .file dl{
+    display: inline-block;
+    width: 100%;
+    margin-right: 0;
+}
+.board-view .view-header .file dl dt{
+    float: left;
+    width: 80px;
+    font-size: 15px;
+    position: relative;
+    vertical-align: middle;
+}
+.board-view .view-header .file dl dt::after{
+content: "|";
+color: #221f1f;
+position: absolute;
+top: 50%;
+right: 0;
+margin-top: -11px;
+}
+.board-view .view-header .file dl dd{
+    font-size: 16px;
+    padding-left: 120px;
+    color: #221f1f;
+    font-weight: bold;
+}
+
 .board-view .view-content{
     padding: 35px 30px;
     border-bottom: 1px solid #403e70;
