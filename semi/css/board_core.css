@@ -31,12 +31,24 @@ header{
     padding-top: 20px;
 }
 .location{
+    display: flex;
     float: right;
-    height: 30px;
-    margin-top: 10px;
-    padding-top: 5px;
-    
+    padding: 10px 10px 0 10px;
+    vertical-align: middle;
 }
+.location .l{
+    padding-top: 20px;
+}
+
+.location span{
+	padding-top: 10px;
+}
+/* .location.community span{
+	padding-top: 10px;
+}
+.location.notice span{
+	padding-top: 10px;
+} */
 .subject{
     margin-top: 80px;
     text-align: center;
